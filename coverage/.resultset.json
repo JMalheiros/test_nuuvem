@@ -14,8 +14,27 @@
           1,
           null
         ]
+      },
+      "/app/spec/models/merchant_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
+      "/app/app/models/merchant.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
       }
     },
-    "timestamp": 1627352959
+    "timestamp": 1627356564
   }
 }
