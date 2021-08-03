@@ -1,0 +1,49 @@
+<div class="purchases-list pmd-table-card pmd-card pmd-z-depth">
+  <table id="purchases_table" class="table pmd_table purchases-table">
+    <thead>
+      <tr>
+        <th><%= Purchase.human_attribute_name(:purchaser_name) %></th>
+        <th><%= Item.human_attribute_name(:description) %></th>
+        <th><%= Item.human_attribute_name(:price) %></th>
+        <th><%= Purchase.human_attribute_name(:item_count) %></th>
+        <th><%= Merchant.human_attribute_name(:address) %></th>
+        <th><%= Merchant.human_attribute_name(:name) %></th>
+        <th><%= Purchase.human_attribute_name(:created_at)%>
+      </tr>
+    </thead>
+    <tbody>
+      <% @purchases.each do |purchase| %>
+        <tr>
+          <td data-title="<%= Purchase.human_attribute_name(:purchaser_name) %>" >
+            <%= purchase.purchaser_name %>
+          </td>
+          
+          <td data-title="<%= Item.human_attribute_name(:description) %>" >
+            <%= purchase.item_description %>
+          </td>
+          
+          <td data-title="<%= Item.human_attribute_name(:price) %>" >
+            <%= purchase.decorate.item_price %>
+          </td>
+          
+          <td data-title="<%= Purchase.human_attribute_name(:item_count) %>" >
+            <%= purchase.item_count %>
+          </td>
+
+          <td data-title="<%= Merchant.human_attribute_name(:address) %>" >
+            <%= purchase.merchant_address %>
+          </td>
+          
+          <td data-title="<%= Merchant.human_attribute_name(:name) %>" >
+            <%= purchase.merchant_name %>
+          </td>
+
+          <td data-title="<%= Purchase.human_attribute_name(:created_at) %>" >
+            <%= purchase.decorate.created_at %>
+          </td>
+
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

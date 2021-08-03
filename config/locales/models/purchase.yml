@@ -1,0 +1,10 @@
+en:
+  activerecord:
+    models:
+      purchase:
+        one: Purchase
+        other: Purchases
+    attributes:
+      item:
+        purchaser_name: Purchaser name
+        item_count: Purchase count

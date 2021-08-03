@@ -1,0 +1,10 @@
+<%= render 'layouts/notice' %>
+
+<h1 class="section-title">
+  <span><%= Purchase.model_name.human(count: Purchase.count) %></span>
+</h1>
+<h3>
+  <span data-title="all_time_gross_income" data-toogle="tooltip" data-container="body" data-html="true" data-placement="right">
+    All time gross income: R$ <%= total_income %>
+  </span>
+</h3>
