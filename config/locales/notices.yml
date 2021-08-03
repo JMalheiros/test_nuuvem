@@ -1,0 +1,5 @@
+en:
+  notices:
+    created: "%{model} was sucessfully created."
+    income: " Total income of the upload: R$ %{income}"
+    empty: "%{attribute} can't be empty"

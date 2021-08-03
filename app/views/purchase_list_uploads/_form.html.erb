@@ -1,0 +1,6 @@
+<%= simple_form_for @purchase_list_upload do |f| %>
+  <%= f.input :file, as: :file, input_html: { class: 'form-control' }, wrapper_html: { class: 'pmd-textfield' } %>
+  
+  <%= render 'layouts/common/buttons/back', link: purchases_path %>
+  <%= render 'layouts/common/buttons/submit' %>
+<% end %>

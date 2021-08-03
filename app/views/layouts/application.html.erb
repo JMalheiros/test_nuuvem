@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TestWeb1</title>
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title><%=content_for?(:title) ? yield(:title) : "Purchases"%></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Purchases"%>">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +12,6 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= content_for?(:content) ? yield(:content) : yield %>
   </body>
 </html>

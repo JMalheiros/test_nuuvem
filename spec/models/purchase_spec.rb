@@ -10,4 +10,11 @@ RSpec.describe Purchase, type: :model do
     it { is_expected.to belong_to :item }
     it { is_expected.to belong_to :merchant }
   end
+
+  context 'delegates' do
+    it { is_expected.to delegate_method(:price).to(:item).with_prefix }
+    it { is_expected.to delegate_method(:description).to(:item).with_prefix }
+    it { is_expected.to delegate_method(:address).to(:merchant).with_prefix }
+    it { is_expected.to delegate_method(:name).to(:merchant).with_prefix }
+  end
 end

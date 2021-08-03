@@ -1,0 +1,10 @@
+en:
+  activerecord:
+    models:
+      item:
+        one: Item
+        other: Items
+    attributes:
+      item:
+        price: Item price
+        description: Item description

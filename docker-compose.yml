@@ -12,13 +12,15 @@ services:
                         - database
                 ports:
                         - "3000:3000"
+                        - "4000:4000"
                 volumes:
                         - .:/app
-                        - gem_cache:/usr/local/bundel/gems
-                        - node_modules:/app/node_modules
+                        - gem_cache:/usr/local/bundel/gems/
+                        - node_modules:/app/node_modules/
                 env_file: .env
                 environment:
                         RAILS_ENV: development
+                        HUB_URL: http://chrome:4444/wd/hub
 
         database:
                 image: postgres:12.1
@@ -26,6 +28,11 @@ services:
                         - db_data:/var/lib/postgresql/data
                         - ./init.sql:/docker-entrypoint-initdb.d/init.sql
 
+        chrome:
+                image: selenium/standalone-chrome
+                ports:
+                        - "5900:5900"
+                
 volumes:
         gem_cache:
         db_data:

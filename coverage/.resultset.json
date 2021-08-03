@@ -1,60 +1,33 @@
 {
   "RSpec": {
     "coverage": {
-      "/app/app/models/item.rb": {
+      "/app/app/decorators/purchase_decorator.rb": {
         "lines": [
           1,
           1,
           null,
           1,
-          null
-        ]
-      },
-      "/app/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/app/spec/models/merchant_spec.rb": {
-        "lines": [
           1,
           null,
           1,
-          1,
-          2,
-          2,
           null,
           null,
           1,
-          2,
+          1,
+          null,
+          1,
           null,
           null
         ]
       },
-      "/app/app/models/merchant.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          null
-        ]
-      },
-      "/app/spec/models/purchase_spec.rb": {
+      "/app/app/decorators/application_decorator.rb": {
         "lines": [
           1,
           null,
-          1,
-          1,
-          2,
-          2,
           null,
           null,
-          1,
-          2,
-          2,
+          null,
+          null,
           null,
           null
         ]
@@ -66,10 +39,38 @@
           null,
           1,
           1,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/app/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/app/app/models/item.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/app/app/models/merchant.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
           null
         ]
       }
     },
-    "timestamp": 1627411833
+    "timestamp": 1627972791
   }
 }

@@ -1,0 +1,10 @@
+en:
+  activerecord:
+    models:
+      merchant:
+        one: Merchant
+        other: Merchants
+    attributes:
+      merchant:
+        name: Merchant name
+        address: Merchant adress
